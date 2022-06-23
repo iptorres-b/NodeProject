@@ -9,7 +9,7 @@ const protectedRoute = express.Router();
 const postM = require('./Models/posts');
 const student = require('./Models/posts');
 const postR = require('./Routes/posts');
-const port = 8080;
+const port = process.env.PORT || 3000;
 
 
 mongoose.connect('mongodb://localhost:27017/testdb').then(()=>{
